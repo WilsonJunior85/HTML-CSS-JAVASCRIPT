@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Sans-serif;
+}
+
+body{
+    background: #2f2e2e;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    background-color: #010101;
+    border-radius: 14px; /* A borda do container fica aredondado */
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 3px 5px rgb(23, 23, 23);
+}
+
+.header{
+    background: linear-gradient(0deg, #000000 0%, #8bb0ff 100%);
+    padding: 24px;
+    text-align: center;
+    color: #fafafa;
+    border-radius: 12px; /* A borda do container fica aredondado */
+}
+
+.form{
+    padding: 18px;
+}
+.form-content{
+    margin-bottom:8px ;
+    padding-bottom: 18px;
+    position: relative;
+}
+.form-content label{
+display: inline-block;
+margin-bottom: 4px;
+color: #cfcece;
+}
+.form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+.form-content a{
+    position: absolute;
+    bottom:  -8px;
+    left: 0;
+    /* Escondendo o erro */
+    visibility: hidden;
+}
+.form button{
+    background-color: #303132;
+    color: #dfdfdf;
+    width: 100%;
+    border-radius: 14px;
+    padding: 14px;
+    border: 0; /* Tira a borda */
+    font-size: 16px; /* Tamanho da fonte do buttom*/
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form-content.error input{
+    border-color: #ff3b25;
+}
+.form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
+}
